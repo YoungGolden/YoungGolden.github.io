@@ -497,6 +497,42 @@ int main(){
     return 0;
 }
 ```
+# Python 
+
+```python
+# -*- coding: UTF-8 -*-
+import math
+
+s=0
+while 1 :
+    s=float(input('Введите x: '))
+    if (s<0 or s>192):
+        print('Неверные данные')
+    else :
+        break
+
+f= open ( 'text.txt', "r" )
+r = f.readline().split() 
+x1,y1=float(r[0]),float(r[1])
+while 1 :
+    r = f.readline().split()
+    x2,y2=float(r[0]),float(r[1])
+    if(s==x1):
+        print(y1)
+        f.close()
+        break
+    if(s==x2):
+        print(y2)
+        f.close()
+        break
+    if(s>x1 and s<x2):
+        z=((((s-x1)*(y2-y1))/(x2-x1))+y1)
+        print(z)
+        f.close()
+        break
+    x1=x2
+    y1=y2
+```
 # text.txt
 
 ```txt
