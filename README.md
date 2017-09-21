@@ -2,4 +2,4 @@
 
 [http://younggolden.github.io](http://younggolden.github.io)
 
-![wiki](wiki.png)
+![wiki](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/Wiki.png)
