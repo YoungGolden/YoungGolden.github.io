@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Site made with Mobirise Website Builder v4.3.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.3.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
+  <meta name="description" content="tochgrag">
+  <title>tochgrag</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/data-tables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <script src="http://d3js.org/d3.v3.min.js"> </script>
+  
+  
+</head>
+
+
+<style>
+        .axis path, .axis line {
+            fill: none;
+            stroke: #333;
+        }
+        .axis .grid-line {
+            stroke: #A73E3E;
+            stroke-opacity: 0.2;
+        }
+        .axis text {
+            font: 14px Open Sans;
+        }
+        .dot {
+            stroke: #D11616;
+            fill: #D11616;
+        }
+</style>
+
+
+<body>
+<section class="mbr-section content4 cid-qvAy816iNj" id="content4-d" data-rv-view="4326">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-7"><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="labaone.html">&lt;/Назад&gt;</a> &nbsp; &nbsp;<a href="index.html">&lt;/Главная&gt;</a>&nbsp;</p></h3>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/c">free website maker</a></section><section class="features10 cid-qvAy8f1YHS" id="features10-e" data-rv-view="4328">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="media mb-3">
+                    <div class="card-img align-self-center d-flex">
+                        <span class="mbr-iconfont mbri-code" media-simple="true"></span>
+                    </div>
+                    <h4 class="card-title media-body py-3 mbr-fonts-style display-7">Точечная диаграмма</h4>
+                </div>
+                <div class="card-box">
+                    
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="media mb-3">
+                    <div class="card-img align-self-center d-flex">
+                        <span class="mbr-iconfont mbri-code" media-simple="true"></span>
+                    </div>
+                    <h4 class="card-title media-body py-3 mbr-fonts-style display-7"><a href="zoomtoch.html">Zoom &nbsp;точ.диаграмма</a></h4>
+                </div>
+                <div class="card-box">
+                    
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="media mb-3">
+                    <div class="card-img align-self-center d-flex">
+                        <span class="mbr-iconfont mbri-code" media-simple="true"></span>
+                    </div>
+                    <h4 class="card-title media-body py-3 mbr-fonts-style display-7"><a href="zoominte.html">Zoom интерполяция</a></h4>
+                </div>
+                <div class="card-box">
+                    
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-qvAy94e7po" id="content4-f" data-rv-view="4331">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">Точечная диаграмма</h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div><script type="text/javascript">
+    var height = 500, 
+        width = 500, 
+        margin=30,
+        rawData = [
+        { x: 0.2, y: 16.60},
+        { x: 0.4, y: 16.60},
+        { x: 0.6, y: 16.60},
+        { x: 0.8, y: 16.60},
+        { x: 1.0, y: 16.50},
+        { x: 1.2, y: 16.50},
+        { x: 1.4, y: 16.50},
+        { x: 1.6, y: 16.50},
+        { x: 1.8, y: 16.50},
+        { x: 2.0, y: 16.50},
+        { x: 2.2, y: 16.40},
+        { x: 2.4, y: 16.40},
+        { x: 2.6, y: 16.40},
+        { x: 2.8, y: 16.40},
+        { x: 3.0, y: 16.40},
+        { x: 3.2, y: 16.40},
+        { x: 3.4, y: 16.40},
+        { x: 3.6, y: 16.30},
+        { x: 3.8, y: 16.30},
+        { x: 4.0, y: 16.30},
+        { x: 4.2, y: 16.30},
+        { x: 4.4, y: 16.30},
+        { x: 4.6, y: 16.30},
+        { x: 4.8, y: 16.30},
+        { x: 5.0, y: 16.20},
+        { x: 5.2, y: 16.20},
+        { x: 5.4, y: 16.20},
+        { x: 5.6, y: 16.20},
+        { x: 5.8, y: 16.20},
+        { x: 6.0, y: 16.10},
+        { x: 6.2, y: 16.00},
+        { x: 6.4, y: 16.00},
+        { x: 6.6, y: 15.90},
+        { x: 6.8, y: 15.90},
+        { x: 7.0, y: 15.80},
+        { x: 7.2, y: 15.70},
+        { x: 7.4, y: 15.66},
+        { x: 7.6, y: 15.55},
+        { x: 7.8, y: 15.40},
+        { x: 8.0, y: 15.20},
+        { x: 8.2, y: 15.10},
+        { x: 8.4, y: 14.70},
+        { x: 8.6, y: 14.30},
+        { x: 8.8, y: 13.80},
+        { x: 9.0, y: 13.00},
+        { x: 9.2, y: 12.20},
+        { x: 9.4, y: 11.20},
+        { x: 9.6, y: 9.30},
+        { x: 9.8, y: 7.10},
+        { x: 10.0, y: 5.80},
+        { x: 10.2, y: 4.00},
+        { x: 10.4, y: 2.40},
+        { x: 10.6, y: 1.50},
+        { x: 10.8, y: 1.20},
+        { x: 11.0, y: 1.10},
+        { x: 11.2, y: 1.00},
+        { x: 11.4, y: 0.90},
+        { x: 11.6, y: 0.85},
+        { x: 11.8, y: 0.83},
+        { x: 12.0, y: 0.80},
+        { x: 12.2, y: 0.78},
+        { x: 12.4, y: 0.75},
+        { x: 12.6, y: 0.70},
+        { x: 12.8, y: 0.70},
+        { x: 13.0, y: 0.70},
+        { x: 13.2, y: 0.68},
+        { x: 13.4, y: 0.65},
+        { x: 13.6, y: 0.65},
+        { x: 13.8, y: 0.62},
+        { x: 14.0, y: 0.60},
+        { x: 14.2, y: 0.60},
+        { x: 14.4, y: 0.60},
+        { x: 14.6, y: 0.62},
+        { x: 14.8, y: 0.65},
+        { x: 15.0, y: 0.69},
+        { x: 15.2, y: 0.72},
+        { x: 15.4, y: 0.78},
+        { x: 15.6, y: 0.81},
+        { x: 15.8, y: 0.90},
+        { x: 16.0, y: 0.92},
+        { x: 16.2, y: 1.00},
+        { x: 16.4, y: 1.10},
+        { x: 16.6, y: 1.20},
+        { x: 16.8, y: 1.30},
+        { x: 17.0, y: 1.50},
+        { x: 17.2, y: 1.70},
+        { x: 17.4, y: 2.00},
+        { x: 17.6, y: 2.30},
+        { x: 17.8, y: 2.60},
+        { x: 18.0, y: 3.10},
+        { x: 18.2, y: 3.70},
+        { x: 18.4, y: 4.30},
+        { x: 18.6, y: 5.00},
+        { x: 18.8, y: 5.90},
+        { x: 19.0, y: 7.30},
+        { x: 19.2, y: 9.50},
+        { x: 19.4, y: 10.70},
+        { x: 19.6, y: 11.60},
+        { x: 19.8, y: 12.50},
+        { x: 20.0, y: 13.50},
+        { x: 20.2, y: 14.20},
+        { x: 20.4, y: 14.80},
+        { x: 20.6, y: 15.20},
+        { x: 20.8, y: 15.50},
+        { x: 21.0, y: 15.70},
+        { x: 21.2, y: 15.80},
+        { x: 21.4, y: 15.98},  
+        { x: 21.6, y: 16.07},
+        { x: 21.8, y: 16.12},
+        { x: 22.0, y: 16.20},
+        { x: 22.2, y: 16.22},
+        { x: 22.4, y: 16.28},
+        { x: 22.6, y: 16.31},
+        { x: 22.8, y: 16.35},
+        { x: 23.0, y: 16.39},
+        { x: 23.2, y: 16.40},
+        { x: 23.4, y: 16.40},
+        { x: 23.6, y: 16.41},
+        { x: 23.8, y: 16.43},
+        { x: 24.0, y: 16.45},
+        { x: 24.2, y: 16.45},
+        { x: 24.4, y: 16.46},
+        { x: 24.6, y: 16.48},
+        { x: 24.8, y: 16.50},
+        { x: 25.0, y: 16.50},
+        { x: 25.2, y: 16.50},
+        { x: 25.4, y: 16.50},
+        { x: 25.6, y: 16.50},
+        { x: 25.8, y: 16.50},
+        { x: 26.0, y: 16.50},
+        { x: 26.2, y: 16.50},
+        { x: 26.4, y: 16.50},
+        { x: 26.6, y: 16.50},
+        { x: 26.8, y: 16.50},
+        { x: 27.0, y: 16.50},
+        { x: 27.2, y: 16.50},
+        { x: 27.4, y: 16.50},
+        { x: 27.6, y: 16.50}
+        ],
+        data=[];
+        
+    var svg = d3.select("body").append("svg")
+            .attr("class", "axis")
+            .attr("width", width)
+            .attr("height", height);
+        
+    // длина оси X= ширина контейнера svg - отступ слева и справа
+    var xAxisLength = width - 2 * margin;     
+        
+    // длина оси Y = высота контейнера svg - отступ сверху и снизу
+    var yAxisLength = height - 2 * margin;
+        
+    // функция интерполяции значений на ось Х  
+    var scaleX = d3.scale.linear()
+                .domain([0, 30])
+                .range([0, xAxisLength]);
+                    
+    // функция интерполяции значений на ось Y
+    var scaleY = d3.scale.linear()
+                .domain([40, 0])
+                .range([0, yAxisLength]);
+        
+    for(i=0; i<rawData.length; i++)
+        data.push({x: scaleX(rawData[i].x)+margin, y: scaleY(rawData[i].y) + margin});
+                    
+    // создаем ось X   
+    var xAxis = d3.svg.axis()
+                    .scale(scaleX)
+                    .orient("bottom");
+    // создаем ось Y             
+    var yAxis = d3.svg.axis()
+                    .scale(scaleY)
+                    .orient("left");
+                    
+    // отрисовка оси Х             
+    svg.append("g")       
+            .attr("class", "x-axis")
+            .attr("transform",  // сдвиг оси вниз и вправо
+                "translate(" + margin + "," + (height - margin) + ")")
+        .call(xAxis);
+        
+    // отрисовка оси Y 
+    svg.append("g")       
+        .attr("class", "y-axis")
+        .attr("transform", // сдвиг оси вниз и вправо на margin
+                "translate(" + margin + "," + margin + ")")
+        .call(yAxis);
+        
+    // создаем набор вертикальных линий для сетки   
+    d3.selectAll("g.x-axis g.tick")
+        .append("line") // добавляем линию
+        .classed("grid-line", true) // добавляем класс
+        .attr("x1", 0)
+        .attr("y1", 0)
+        .attr("x2", 0)
+        .attr("y2", - (height - 2 * margin));
+            
+    // рисуем горизонтальные линии 
+    d3.selectAll("g.y-axis g.tick")
+        .append("line")
+        .classed("grid-line", true)
+        .attr("x1", 0)
+        .attr("y1", 0)
+        .attr("x2", yAxisLength)
+        .attr("y2", 0);
+    
+    // функция, создающая по массиву точек линии
+    var line = d3.svg.line()
+                .x(function(d){return d.x;})
+                .y(function(d){return d.y;});
+    
+    var g = svg.append("g");
+    g.append("path")
+        .attr("d", line(data))
+        .style("stroke", "steelblue")
+        .style("stroke-width", 2);
+        
+    g.append("text")
+        .attr("x", margin + 28)
+        .attr("y", margin - 11)
+        .attr("text-anchor", "end")
+        .style("color", "#FFFFFF")
+        .style("font-size", "11px")
+        .text("Ось Y(см)");
+        
+    g.append("text")
+        .attr("x", width - margin + 11)
+        .attr("y", height - margin - 5)
+        .attr("text-anchor", "end")
+        .style("font-size", "11px")
+        .text("Ось Х(см)");
+    
+    // добавляем отметки к точкам
+    svg.selectAll(".dot")
+        .data(rawData)
+        .enter().append("circle")
+        .attr("class", "dot")
+        .attr("r", 0.5)
+        .attr("cx", function(d) { return scaleX(d.x)+margin; })
+        .attr("cy", function(d) { return scaleY(d.y)+margin; });
+    </script>
+    
+    <!---
+    <script type="text/javascript">
+    var height = 500, 
+        width = 500, 
+        margin=30,
+        rawData = [
+            {x: 0.2, y: 2.2}, {x: 20, y: 74},{x: 30, y: 63},
+            {x: 40, y: 56}, {x: 50, y: 24}, {x: 60, y: 26},
+            {x: 70, y: 19}, {x: 80, y: 42}, {x: 90, y: 88}
+        ],
+        data=[];
+     
+    var svg = d3.select("body").append("svg")
+            .attr("class", "axis")
+            .attr("width", width)
+            .attr("height", height);
+     
+    // длина оси X= ширина контейнера svg - отступ слева и справа
+    var xAxisLength = width - 2 * margin;     
+      
+    // длина оси Y = высота контейнера svg - отступ сверху и снизу
+    var yAxisLength = height - 2 * margin;
+        
+    // функция интерполяции значений на ось Х  
+    var scaleX = d3.scale.linear()
+                .domain([0, 100])
+                .range([0, xAxisLength]);
+                 
+    // функция интерполяции значений на ось Y
+    var scaleY = d3.scale.linear()
+                .domain([100, 0])
+                .range([0, yAxisLength]);
+     
+    for(i=0; i<rawData.length; i++)
+        data.push({x: scaleX(rawData[i].x)+margin, y: scaleY(rawData[i].y) + margin});
+                 
+    // создаем ось X   
+    var xAxis = d3.svg.axis()
+                 .scale(scaleX)
+                 .orient("bottom");
+    // создаем ось Y             
+    var yAxis = d3.svg.axis()
+                 .scale(scaleY)
+                 .orient("left");
+                  
+    // отрисовка оси Х             
+    svg.append("g")       
+         .attr("class", "x-axis")
+         .attr("transform",  // сдвиг оси вниз и вправо
+             "translate(" + margin + "," + (height - margin) + ")")
+        .call(xAxis);
+     
+    // отрисовка оси Y 
+    svg.append("g")       
+        .attr("class", "y-axis")
+        .attr("transform", // сдвиг оси вниз и вправо на margin
+                "translate(" + margin + "," + margin + ")")
+        .call(yAxis);
+     
+    // создаем набор вертикальных линий для сетки   
+    d3.selectAll("g.x-axis g.tick")
+        .append("line") // добавляем линию
+        .classed("grid-line", true) // добавляем класс
+        .attr("x1", 0)
+        .attr("y1", 0)
+        .attr("x2", 0)
+        .attr("y2", - (height - 2 * margin));
+         
+    // рисуем горизонтальные линии 
+    d3.selectAll("g.y-axis g.tick")
+        .append("line")
+        .classed("grid-line", true)
+        .attr("x1", 0)
+        .attr("y1", 0)
+        .attr("x2", yAxisLength)
+        .attr("y2", 0);
+    /* 
+    // функция, создающая по массиву точек линии
+    var line = d3.svg.line()
+                .x(function(d){return d.x;})
+                .y(function(d){return d.y;});
+    */
+    
+    // Функция interpolate
+    var line = d3.svg.line().interpolate("basis")
+        .x(function(d){return d.x;})
+        .y(function(d){return d.y;});
+    
+    var area = d3.svg.area().interpolate("basis")
+        .x(function(d) { return d.x; })
+        .y0(height - margin)
+        .y1(function(d) { return d.y; });
+    
+    var g = svg.append("g");
+    g.append("path")
+        .attr("d", line(data))
+        .style("stroke", "steelblue")
+        .style("stroke-width", 2);
+    
+    // добавляем заголовок
+    g.append("text")
+        .attr("x", (width / 2))
+        .attr("y", margin - 10 )
+        .attr("text-anchor", "middle")
+        .style("font-size", "22px")
+        .text("График значений");
+     
+    g.append("text")
+        .attr("x", margin + 28)
+        .attr("y", margin - 11)
+        .attr("text-anchor", "end")
+        .style("font-size", "11px")
+        .text("Ось Y(ММ)");
+     
+    g.append("text")
+        .attr("x", width - margin + 11)
+        .attr("y", height - margin - 5)
+        .attr("text-anchor", "end")
+        .style("font-size", "11px")
+        .text("Ось Х(ММ)");
+    
+    // добавляем отметки к точкам
+    svg.selectAll(".dot")
+        .data(rawData)
+        .enter().append("circle")
+        .attr("class", "dot")
+        .attr("r", 3.5)
+        .attr("cx", function(d) { return scaleX(d.x)+margin; })
+        .attr("cy", function(d) { return scaleY(d.y)+margin; });
+    </script>
+    
+    <script type="text/javascript">
+    var height = 500, 
+        width = 500, 
+        margin=30,
+        rawData = [
+            {x: 0.2, y: 2.2}, {x: 20, y: 74},{x: 30, y: 63},
+            {x: 40, y: 56}, {x: 50, y: 24}, {x: 60, y: 26},
+            {x: 70, y: 19}, {x: 80, y: 42}, {x: 90, y: 88}
+        ],
+        data=[];
+        
+    var svg = d3.select("body").append("svg")
+            .attr("class", "axis")
+            .attr("width", width)
+            .attr("height", height);
+        
+    // длина оси X= ширина контейнера svg - отступ слева и справа
+    var xAxisLength = width - 2 * margin;     
+        
+    // длина оси Y = высота контейнера svg - отступ сверху и снизу
+    var yAxisLength = height - 2 * margin;
+        
+    // функция интерполяции значений на ось Х  
+    var scaleX = d3.scale.linear()
+                .domain([0, 100])
+                .range([0, xAxisLength]);
+                    
+    // функция интерполяции значений на ось Y
+    var scaleY = d3.scale.linear()
+                .domain([100, 0])
+                .range([0, yAxisLength]);
+        
+    for(i=0; i<rawData.length; i++)
+        data.push({x: scaleX(rawData[i].x)+margin, y: scaleY(rawData[i].y) + margin});
+                    
+    // создаем ось X   
+    var xAxis = d3.svg.axis()
+                    .scale(scaleX)
+                    .orient("bottom");
+    // создаем ось Y             
+    var yAxis = d3.svg.axis()
+                    .scale(scaleY)
+                    .orient("left");
+                    
+    // отрисовка оси Х             
+    svg.append("g")       
+            .attr("class", "x-axis")
+            .attr("transform",  // сдвиг оси вниз и вправо
+                "translate(" + margin + "," + (height - margin) + ")")
+        .call(xAxis);
+        
+    // отрисовка оси Y 
+    svg.append("g")       
+        .attr("class", "y-axis")
+        .attr("transform", // сдвиг оси вниз и вправо на margin
+                "translate(" + margin + "," + margin + ")")
+        .call(yAxis);
+        
+    // создаем набор вертикальных линий для сетки   
+    d3.selectAll("g.x-axis g.tick")
+        .append("line") // добавляем линию
+        .classed("grid-line", true) // добавляем класс
+        .attr("x1", 0)
+        .attr("y1", 0)
+        .attr("x2", 0)
+        .attr("y2", - (height - 2 * margin));
+            
+    // рисуем горизонтальные линии 
+    d3.selectAll("g.y-axis g.tick")
+        .append("line")
+        .classed("grid-line", true)
+        .attr("x1", 0)
+        .attr("y1", 0)
+        .attr("x2", yAxisLength)
+        .attr("y2", 0);
+    /* 
+    // функция, создающая по массиву точек линии
+    var line = d3.svg.line()
+                .x(function(d){return d.x;})
+                .y(function(d){return d.y;});
+    */
+    
+    // Функция interpolate
+    var line = d3.svg.line().interpolate("basis")
+        .x(function(d){return d.x;})
+        .y(function(d){return d.y;});
+    
+    var area = d3.svg.area().interpolate("basis")
+        .x(function(d) { return d.x; })
+        .y0(height - margin)
+        .y1(function(d) { return d.y; });
+    
+    var g = svg.append("g");
+    g.append("path")
+        .attr("d", line(data))
+        .style("stroke", "steelblue")
+        .style("stroke-width", 2);
+    
+    // добавляем заголовок
+    g.append("text")
+        .attr("x", (width / 2))
+        .attr("y", margin - 10 )
+        .attr("text-anchor", "middle")
+        .style("font-size", "22px")
+        .text("График значений");
+        
+    g.append("text")
+        .attr("x", margin + 28)
+        .attr("y", margin - 11)
+        .attr("text-anchor", "end")
+        .style("font-size", "11px")
+        .text("Ось Y(ММ)");
+        
+    g.append("text")
+        .attr("x", width - margin + 11)
+        .attr("y", height - margin - 5)
+        .attr("text-anchor", "end")
+        .style("font-size", "11px")
+        .text("Ось Х(ММ)");
+    
+    </script>
+    --></div>
+
+
+<section class="section-table cid-qvAyvwel8h" id="table1-h" data-rv-view="4333">
+
+  
+  
+        <div class="container container-table">
+                <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">Database</h2>
+                
+                <div class="table-wrapper">
+                  <div class="container">
+                    <div class="row search">
+                      <div class="col-md-6"></div>
+                      <div class="col-md-6">
+                          <div class="dataTables_filter">
+                            <label class="searchInfo mbr-fonts-style display-7">Для поиска точек в таблице введите (x=*.**или y=*.**  | Пример запроса: x=0.20| Желательно без пробелов!!!):</label>
+                            <input class="form-control input-sm" disabled="">
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="container scroll">
+                    <table class="table isSearch" cellspacing="0">
+                      <thead>
+                        <tr class="table-heads ">
+                            
+                            
+                            
+                            
+                        <th class="head-item mbr-fonts-style display-7">
+                                X</th><th class="head-item mbr-fonts-style display-7">
+                                Y</th></tr>
+                      </thead>
+          
+                      <tbody>
+                        
+                        
+                        
+                        
+                      <tr> 
+                      
+                      
+                      
+                                      <td class="body-item mbr-fonts-style display-7">x=0.20</td><td class="body-item mbr-fonts-style display-7">y=16.60</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=0.00</td><td class="body-item mbr-fonts-style display-7">y=16.60</td></tr><tr>
+                                      <td class="body-item mbr-fonts-style display-7">x=0.40</td><td class="body-item mbr-fonts-style display-7">y=16.60</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=0.60</td><td class="body-item mbr-fonts-style display-7">y=16.60</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=0.80</td><td class="body-item mbr-fonts-style display-7">y=16.60</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=1.00</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=1.20</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=1.40</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=1.60</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=1.80</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=2.00</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=2.20</td><td class="body-item mbr-fonts-style display-7">y=16.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=2.40</td><td class="body-item mbr-fonts-style display-7">y=16.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=2.60</td><td class="body-item mbr-fonts-style display-7">y=16.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=2.80</td><td class="body-item mbr-fonts-style display-7">y=16.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=3.00</td><td class="body-item mbr-fonts-style display-7">y=16.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=3.20</td><td class="body-item mbr-fonts-style display-7">y=16.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=3.40</td><td class="body-item mbr-fonts-style display-7">y=16.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=3.60</td><td class="body-item mbr-fonts-style display-7">y=16.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=3.80</td><td class="body-item mbr-fonts-style display-7">y=16.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=4.00</td><td class="body-item mbr-fonts-style display-7">y=16.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=4.20</td><td class="body-item mbr-fonts-style display-7">y=16.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=4.40</td><td class="body-item mbr-fonts-style display-7">y=16.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=4.60</td><td class="body-item mbr-fonts-style display-7">y=16.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=4.80</td><td class="body-item mbr-fonts-style display-7">y=16.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=5.00</td><td class="body-item mbr-fonts-style display-7">y=16.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=5.20</td><td class="body-item mbr-fonts-style display-7">y=16.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=5.40</td><td class="body-item mbr-fonts-style display-7">y=16.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=5.60</td><td class="body-item mbr-fonts-style display-7">y=16.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=5.80</td><td class="body-item mbr-fonts-style display-7">y=16.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=6.00</td><td class="body-item mbr-fonts-style display-7">y=16.10</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=6.20</td><td class="body-item mbr-fonts-style display-7">y=16.00</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=6.40</td><td class="body-item mbr-fonts-style display-7">y=16.00</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=6.60</td><td class="body-item mbr-fonts-style display-7">y=15.90</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=6.80</td><td class="body-item mbr-fonts-style display-7">y=15.90</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=7.00</td><td class="body-item mbr-fonts-style display-7">y=15.80</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=7.20</td><td class="body-item mbr-fonts-style display-7">y=15.70</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=7.40</td><td class="body-item mbr-fonts-style display-7">y=15.66</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=7.60</td><td class="body-item mbr-fonts-style display-7">y=15.55</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=7.80</td><td class="body-item mbr-fonts-style display-7">y=15.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=8.00</td><td class="body-item mbr-fonts-style display-7">y=15.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=8.20</td><td class="body-item mbr-fonts-style display-7">y=15.10</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=8.40</td><td class="body-item mbr-fonts-style display-7">y=14.70</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=8.60</td><td class="body-item mbr-fonts-style display-7">y=14.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=8.80</td><td class="body-item mbr-fonts-style display-7">y=13.80</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=9.00</td><td class="body-item mbr-fonts-style display-7">y=13.00</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=9.20</td><td class="body-item mbr-fonts-style display-7">y=12.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=9.40</td><td class="body-item mbr-fonts-style display-7">y=11.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=9.60</td><td class="body-item mbr-fonts-style display-7">y=9.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=9.80</td><td class="body-item mbr-fonts-style display-7">y=7.10</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=10.00</td><td class="body-item mbr-fonts-style display-7">y=5.80</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=10.20</td><td class="body-item mbr-fonts-style display-7">y=4.00</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=10.40</td><td class="body-item mbr-fonts-style display-7">y=2.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=10.60</td><td class="body-item mbr-fonts-style display-7">y=1.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=10.80</td><td class="body-item mbr-fonts-style display-7">y=1.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=11.00</td><td class="body-item mbr-fonts-style display-7">y=1.10</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=11.20</td><td class="body-item mbr-fonts-style display-7">y=1.00</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=11.40</td><td class="body-item mbr-fonts-style display-7">y=0.90</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=11.60</td><td class="body-item mbr-fonts-style display-7">y=0.85</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=11.80</td><td class="body-item mbr-fonts-style display-7">y=0.83</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=12.00</td><td class="body-item mbr-fonts-style display-7">y=0.80</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=12.20</td><td class="body-item mbr-fonts-style display-7">y=0.78</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=12.40</td><td class="body-item mbr-fonts-style display-7">y=0.75</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=12.60</td><td class="body-item mbr-fonts-style display-7">y=0.70</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=12.80</td><td class="body-item mbr-fonts-style display-7">y=0.70</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=13.00</td><td class="body-item mbr-fonts-style display-7">y=0.70</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=13.20</td><td class="body-item mbr-fonts-style display-7">y=0.68</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=13.40</td><td class="body-item mbr-fonts-style display-7">y=0.65</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=13.60</td><td class="body-item mbr-fonts-style display-7">y=0.65</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=13.80</td><td class="body-item mbr-fonts-style display-7">y=0.62</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=14.00</td><td class="body-item mbr-fonts-style display-7">y=0.60</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=14.20</td><td class="body-item mbr-fonts-style display-7">y=0.60</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=14.40</td><td class="body-item mbr-fonts-style display-7">y=0.60</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=14.60</td><td class="body-item mbr-fonts-style display-7">y=0.62</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=14.80</td><td class="body-item mbr-fonts-style display-7">y=0.65</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=15.00</td><td class="body-item mbr-fonts-style display-7">y=0.69</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=15.20</td><td class="body-item mbr-fonts-style display-7">y=0.72</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=15.40</td><td class="body-item mbr-fonts-style display-7">y=0.78</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=15.60</td><td class="body-item mbr-fonts-style display-7">y=0.81</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=15.80</td><td class="body-item mbr-fonts-style display-7">y=0.90</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=16.00</td><td class="body-item mbr-fonts-style display-7">y=0.92</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=16.20</td><td class="body-item mbr-fonts-style display-7">y=1.00</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=16.40</td><td class="body-item mbr-fonts-style display-7">y=1.10</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=16.60</td><td class="body-item mbr-fonts-style display-7">y=1.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=16.80</td><td class="body-item mbr-fonts-style display-7">y=1.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=17.00</td><td class="body-item mbr-fonts-style display-7">y=1.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=17.20</td><td class="body-item mbr-fonts-style display-7">y=1.70</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=17.40</td><td class="body-item mbr-fonts-style display-7">y=2.00</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=17.60</td><td class="body-item mbr-fonts-style display-7">y=2.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=17.80</td><td class="body-item mbr-fonts-style display-7">y=2.60</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=18.00</td><td class="body-item mbr-fonts-style display-7">y=3.10</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=18.20</td><td class="body-item mbr-fonts-style display-7">y=3.70</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=18.40</td><td class="body-item mbr-fonts-style display-7">y=4.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=18.60</td><td class="body-item mbr-fonts-style display-7">y=5.00</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=18.80</td><td class="body-item mbr-fonts-style display-7">y=5.90</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=19.00</td><td class="body-item mbr-fonts-style display-7">y=7.30</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=19.20</td><td class="body-item mbr-fonts-style display-7">y=9.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=19.40</td><td class="body-item mbr-fonts-style display-7">y=10.70</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=19.60</td><td class="body-item mbr-fonts-style display-7">y=11.60</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=19.80</td><td class="body-item mbr-fonts-style display-7">y=12.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=20.00</td><td class="body-item mbr-fonts-style display-7">y=13.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=20.20</td><td class="body-item mbr-fonts-style display-7">y=14.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=20.40</td><td class="body-item mbr-fonts-style display-7">y=14.80</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=20.60</td><td class="body-item mbr-fonts-style display-7">y=15.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=20.80</td><td class="body-item mbr-fonts-style display-7">y=15.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=21.00</td><td class="body-item mbr-fonts-style display-7">y=15.70</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=21.20</td><td class="body-item mbr-fonts-style display-7">y=15.80</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=21.40</td><td class="body-item mbr-fonts-style display-7">y=15.98</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=21.60</td><td class="body-item mbr-fonts-style display-7">y=16.07</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=21.80</td><td class="body-item mbr-fonts-style display-7">y=16.12</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=22.00</td><td class="body-item mbr-fonts-style display-7">y=16.20</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=22.20</td><td class="body-item mbr-fonts-style display-7">y=16.22</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=22.40</td><td class="body-item mbr-fonts-style display-7">y=16.28</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=22.60</td><td class="body-item mbr-fonts-style display-7">y=16.31</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=22.80</td><td class="body-item mbr-fonts-style display-7">y=16.35</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=23.00</td><td class="body-item mbr-fonts-style display-7">y=16.39</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=23.20</td><td class="body-item mbr-fonts-style display-7">y=16.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=23.40</td><td class="body-item mbr-fonts-style display-7">y=16.40</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=23.60</td><td class="body-item mbr-fonts-style display-7">y=16.41</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=23.80</td><td class="body-item mbr-fonts-style display-7">y=16.43</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=24.00</td><td class="body-item mbr-fonts-style display-7">y=16.45</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=24.20</td><td class="body-item mbr-fonts-style display-7">y=16.45</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=24.40</td><td class="body-item mbr-fonts-style display-7">y=16.46</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=24.60</td><td class="body-item mbr-fonts-style display-7">y=16.48</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=24.80</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=25.00</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=25.20</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=25.40</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=25.60</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=25.80</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=26.00</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=26.20</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=26.40</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=26.60</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=26.80</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=27.00</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=27.20</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=27.40</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr><tr>                                                             
+                                      <td class="body-item mbr-fonts-style display-7">x=27.60</td><td class="body-item mbr-fonts-style display-7">y=16.50</td></tr></tbody>                                                             
+                    </table>
+                  </div>
+                  <div class="container table-info-container">
+                    <div class="row info">
+                      <div class="col-md-6">
+                        <div class="dataTables_info mbr-fonts-style display-7">
+                          <span class="infoBefore"></span>
+                          <span class="inactive infoRows"></span>
+                          <span class="infoAfter"></span>
+                          <span class="infoFilteredBefore"></span>
+                          <span class="inactive infoRows"></span>
+                          <span class="infoFilteredAfter"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-6"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="assets/data-tables/jquery.data-tables.min.js"></script>
+  <script src="assets/data-tables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

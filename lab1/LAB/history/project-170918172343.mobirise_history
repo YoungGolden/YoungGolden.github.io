@@ -1,0 +1,21 @@
+{
+  "settings": {
+    "path": "@PROJECT_PATH@",
+    "currentPage": "index.html",
+    "versionFirst": "3.12.1",
+    "versionPublish": "3.12.1"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": []
+    }
+  }
+}
