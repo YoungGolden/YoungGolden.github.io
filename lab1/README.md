@@ -1,6 +1,6 @@
 # Лабораторна работа №1
 
-* ***Рисуем график с D3.js([ПОСМОТРЕТЬ](https://YoungGolden.github.io/lab1/zoominte.html))***
+* ***Рисуем график с D3.js([ПОСМОТРЕТЬ](https://YoungGolden.github.io/lab1/index.html)***
 ![img](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/Image%201.png)
 ```html
 <!DOCTYPE html>
