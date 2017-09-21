@@ -1,7 +1,7 @@
 # Лабораторна работа №1
 
 * ***Рисуем график с D3.js*** [ПОСМОТРЕТЬ](https://younggolden.github.io/lab1/)
-![img](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/Image%201.png)
+[![img](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/Image%201.png)](https://younggolden.github.io/lab1/)
 ```html
 <!DOCTYPE html>
 <html>
