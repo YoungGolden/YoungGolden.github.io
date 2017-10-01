@@ -19,7 +19,7 @@
 >./return < basecpp.in
 
 # C++ (gauss.cpp)
-
+[cpp](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/cpp.png)
 ```c++
 #include <iostream>
 #include <cmath>
