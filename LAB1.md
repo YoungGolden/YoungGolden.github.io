@@ -19,7 +19,9 @@
 >./return < basecpp.in
 
 # C++ (gauss.cpp)
+
 ![cpp](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/cpp.png)
+
 ```c++
 #include <iostream>
 #include <cmath>
@@ -244,6 +246,23 @@ if __name__ == "__main__":
 2 70 3
 ```
 
+**scilab**
+```txt
+// В командной строке передаем данные в функцию
+
+-->A = [2,4,6;3,-2,1;4,2,-1]; b = [14;-3;-4];
+-->gausselim(A,b)    //Вызов функции без назначения
+ ans  =
+! - 1. !
+!   1. !
+!   2. !
+-->x = gausselim(A,b)  //Вызов функции с назначением
+ x  =
+! - 1. !
+!   1. !
+!   2. !
+```
+
 # Scilab
 
 ![scilab](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/scilab.png)
@@ -291,19 +310,4 @@ for i = n-1:-1:1
 end;
 
 //End function
-
-// В командной строке передаем данные в функцию
-
--->A = [2,4,6;3,-2,1;4,2,-1]; b = [14;-3;-4];
--->gausselim(A,b)    //Вызов функции без назначения
- ans  =
-! - 1. !
-!   1. !
-!   2. !
--->x = gausselim(A,b)  //Вызов функции с назначением
- x  =
-! - 1. !
-!   1. !
-!   2. !
-
 ```
