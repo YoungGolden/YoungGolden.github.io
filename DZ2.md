@@ -1,4 +1,10 @@
-# DZ2
+# DZ2 | Scilab | IDE : Visual Studio Code
+
+***NGTU Волков Евгений Александрович 15-ПМ.***
+---
+
+# Scilab
+
 ```scilab
 x=-6*%pi:0.1:6*%pi;
 x1=-%pi/2:0.1:%pi/2;
