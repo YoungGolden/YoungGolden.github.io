@@ -680,6 +680,8 @@ while 1 :
 ```
 # Scilab Img
 
+![2](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/2.png)
+
 ```txt
 x=[
 0.0,
