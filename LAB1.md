@@ -1,4 +1,4 @@
-# lab1 | Linux 16.04 | IDE : Visual Studio Code
+# Lab1 | Linux 16.04 | IDE : Visual Studio Code
 
 Компилируем так:
 
