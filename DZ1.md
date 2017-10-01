@@ -1,4 +1,8 @@
 # DZ1 | D3 | C++ | Python | IDE : Visual Studio Code
+
+***NGTU Волков Евгений Александрович 15-ПМ. Лабораторная работа №1. Метод гаусса.***
+---
+
 * ***Рисуем график с D3.js*** [ПОСМОТРЕТЬ](https://younggolden.github.io/lab1/)
 [![img](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/Image%201.png)](https://younggolden.github.io/lab1/zoomtoch.html)
 ```html
