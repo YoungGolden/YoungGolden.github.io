@@ -290,4 +290,18 @@ end;
 
 //End function
 
+// В командной строке передаем данные в функцию
+
+-->A = [2,4,6;3,-2,1;4,2,-1]; b = [14;-3;-4];
+-->gausselim(A,b)    //Function call without assignment
+ ans  =
+! - 1. !
+!   1. !
+!   2. !
+-->x = gausselim(A,b)  //Function call with assignment
+ x  =
+! - 1. !
+!   1. !
+!   2. !
+
 ```
