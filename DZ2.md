@@ -5,6 +5,8 @@
 
 # Scilab
 
+![3](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/3.png)
+
 ```scilab
 x=-6*%pi:0.1:6*%pi;
 x1=-%pi/2:0.1:%pi/2;
