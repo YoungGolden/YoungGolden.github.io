@@ -246,6 +246,7 @@ if __name__ == "__main__":
     (Enter)
 2 70 3
 ```
+---
 
 **scilab**
 ```txt
