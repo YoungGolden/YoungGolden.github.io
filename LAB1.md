@@ -246,6 +246,8 @@ if __name__ == "__main__":
 
 # Scilab
 
+![scilab](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/scilab.png)
+
 ```scilab
 function [x] = gausselim(A,b)
     
