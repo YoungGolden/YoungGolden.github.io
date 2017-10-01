@@ -19,7 +19,7 @@
 >./return < basecpp.in
 
 # C++ (gauss.cpp)
-[cpp](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/cpp.png)
+![cpp](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/cpp.png)
 ```c++
 #include <iostream>
 #include <cmath>
@@ -147,7 +147,7 @@ int main() {
 >python gauss.py < datapy.in
 
 # Python (gauss.py)
-
+![py](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/py.png)
 ```python
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
