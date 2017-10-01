@@ -20,7 +20,7 @@
 >./return < basecpp.in
 
 
-# C++
+# C++ (gauss.cpp)
 
 ```c++
 #include <iostream>
@@ -149,7 +149,7 @@ int main() {
 >python gauss.py < datapy.in
 
 
-# Python
+# Python (gauss.py)
 
 ```python
 #!/usr/bin/env python
@@ -236,12 +236,13 @@ if __name__ == "__main__":
     print(line)
 ```
 
-# basecpp.in
+# basepy.in
 
 ```txt
 3
 1 2 5
 6 2 1
 5 4 3
+    (Enter)
 2 70 3
 ```
