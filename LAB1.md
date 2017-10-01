@@ -249,24 +249,24 @@ if __name__ == "__main__":
 ```scilab
 function [x] = gausselim(A,b)
     
-//This function obtains the solution to the system of
-//linear equations A*x = b, given the matrix of coefficients A
-//and the right-hand side vector, b
+//Эта функция получает решение системы
+//Линейных уравнений A * x = b, учитывая матрицу коэффициентов A
+//и вектор правой стороны, b
 
 [nA,mA] = size(A)
 [nb,mb] = size(b)
 
 if nA<>mA then
     
-                    error('gausselim - Matrix A must be square');
+                    error('gausselim - Матрица А должна быть квадратной');
                     abort;
 elseif mA<>nb then
-        error('gausselim - incompatible dimensions between A and b');
+        error('gausselim - несовместимые размеры между A и b');
         abort;
 end;
 
-a = [A b];  //Matrix augmentation
-//Forward elimination
+a = [A b];  //Матричное увеличение
+//Прямое устранение
 
 n = nA;
 for k=1:n-1
@@ -276,7 +276,7 @@ for k=1:n-1
 end;
     end;
 end;
-//Backward substitution
+//Обратная подстановка
 
 x(n) = a(n,n+1)/a(n,n);
 
@@ -293,12 +293,12 @@ end;
 // В командной строке передаем данные в функцию
 
 -->A = [2,4,6;3,-2,1;4,2,-1]; b = [14;-3;-4];
--->gausselim(A,b)    //Function call without assignment
+-->gausselim(A,b)    //Вызов функции без назначения
  ans  =
 ! - 1. !
 !   1. !
 !   2. !
--->x = gausselim(A,b)  //Function call with assignment
+-->x = gausselim(A,b)  //Вызов функции с назначением
  x  =
 ! - 1. !
 !   1. !
