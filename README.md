@@ -1,4 +1,6 @@
-# YoungGolden.github.io
+# Лабораторные работы и домашние задания
+Волков Евгений Александрочив 15-ПМ
+---
 
 [http://younggolden.github.io](http://younggolden.github.io)
 
