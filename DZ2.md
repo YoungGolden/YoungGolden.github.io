@@ -3,6 +3,34 @@
 ***NGTU Волков Евгений Александрович 15-ПМ.***
 ---
 
+# Python
+
+```phyton
+import math
+from decimal import Decimal
+import numpy as np
+
+
+def func(n):
+    for x in np.arange(0 , 6 * math.pi , 0.01): 
+        y = Decimal(x)
+        s = 1
+        for i in range(3 , n + 1 , 2):
+            y += Decimal( Decimal(((-1) ** s)*Decimal(x ** i)) / Decimal(math.factorial(i)) )
+            i += 2 
+            s += 1
+        if(math.fabs(Decimal (Decimal(math.sin(Decimal(x))) - Decimal(y))) > e):
+            print(n,' ', x-0.01)
+            break   
+
+e = Decimal(0.01)
+
+
+n = int(input('>>>'))
+for i in range(1 , n+1 , 2):
+    func(i)
+```
+
 # Scilab
 
 ![3](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/3.png)
