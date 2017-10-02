@@ -64,7 +64,6 @@ using namespace std;
 
 void print(vector< vector<double> > A) {
     int n = A.size();
-    // Выводим матрицу
     for (int i=0; i<n; i++) {
         for (int j=0; j<n+1; j++) {
             cout << A[i][j] << "\t";
@@ -81,7 +80,7 @@ vector<double> gauss(vector< vector<double> > A) {
     int n = A.size();
 
     for (int i=0; i<n; i++) {
-        // Поиск максимума в этом столбце
+        // Search for maximum in this column
         double maxEl = abs(A[i][i]);
         int maxRow = i;
         for (int k=i+1; k<n; k++) {
@@ -91,14 +90,14 @@ vector<double> gauss(vector< vector<double> > A) {
             }
         }
 
-        // Поменяем местами максимальную строку с текущей строкой (по столбцу)
+        // Swap maximum row with current row (column by column)
         for (int k=i; k<n+1;k++) {
             double tmp = A[maxRow][k];
             A[maxRow][k] = A[i][k];
             A[i][k] = tmp;
         }
 
-        // Сделаем все строки ниже 0 в текущем столбце
+        // Make all rows below this one 0 in current column
         for (int k=i+1; k<n; k++) {
             double c = -A[k][i]/A[i][i];
             for (int j=i; j<n+1; j++) {
@@ -111,7 +110,7 @@ vector<double> gauss(vector< vector<double> > A) {
         }
     }
 
-    // Решим уравнение Ax = b для верхней треугольной матрицы A
+    // Solve equation Ax=b for an upper triangular matrix A
     vector<double> x(n);
     for (int i=n-1; i>=0; i--) {
         x[i] = A[i][n]/A[i][i];
@@ -130,7 +129,7 @@ int main() {
     vector<double> line(n+1,0);
     vector< vector<double> > A(n,line);
 
-    // Чение выходных данных
+    // Read input data
     for (int i=0; i<n; i++) {
         for (int j=0; j<n; j++) {
             cin >> A[i][j];
@@ -141,23 +140,45 @@ int main() {
         cin >> A[i][n];
     }
 
-    // Вывод входных данных
+    // Print input
     print(A);
 
-    // Делаем подсчет
+    // Calculate solution
     vector<double> x(n);
     x = gauss(A);
 
-    // Показываем результат
+    // Print result
     cout << "Result:\t";
+    
     for (int i=0; i<n; i++) {
         cout << x[i] << " ";
     }
+    cout << endl << endl;
+    
+    double *f;
+    cout << "--------------------------" << endl;
+    cout << "F = Ax - b" << endl << endl;
+    for (int i=0; i<n; i++) {
+        f[i]=0;
+        for(int k = 0 ; k < n ; k++)
+            f[i]+=A[i][k]*x[k];
+            f[i] = f[i] - A[i][n];
+        cout << "F[" << i+1 << "]=" << f[i] << endl;
+    }
+    
+    double max;
     cout << endl;
+    max = fabs(f[0]);
+    for (int i=0 ; i <n ; i++)
+        if(fabs(f[i]) > max){
+            max = fabs(f[i]);
+        }
+    cout << "Max f = " << max << endl;
+}
 }
 ```
 
-# basecpp.in
+# basecpp.in (Привер файла)
 ```txt
 3
 1 2 5
