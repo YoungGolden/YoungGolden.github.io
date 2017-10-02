@@ -5,6 +5,8 @@
 
 # Python
 
+![4](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/4.png)
+
 ```phyton
 import math
 from decimal import Decimal
