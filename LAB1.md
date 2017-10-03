@@ -212,7 +212,7 @@ int main() {
 }
 ```
 
-# basecpp.in (Привер файла)
+# basecpp.in (Пример файла)
 ```txt
 3
 1 2 5
