@@ -12,6 +12,28 @@
 ***ПРИМЕР РАБОТЫ ОБНОВЛЕННОЙ ПРОГРАММЫ С++***
 ![5](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/5.png)
 
+*** добавленная часть кода выглядит следующим образом***
+```c++
+    double *f;
+    cout << "--------------------------" << endl;
+    cout << "F = Ax - b" << endl << endl;
+    for (int i=0; i<n; i++) {
+        f[i]=0;
+        for(int k = 0 ; k < n ; k++)
+            f[i]+=A[i][k]*x[k];
+            f[i] = f[i] - A[i][n];
+        cout << "F[" << i+1 << "]=" << f[i] << endl;
+    }
+    
+    double max;
+    cout << endl;
+    max = fabs(f[0]);
+    for (int i=0 ; i <n ; i++)
+        if(fabs(f[i]) > max){
+            max = fabs(f[i]);
+        }
+    cout << "Max f = " << max << endl;
+```
 # Цели и задачи
 
 * Цель работы:
