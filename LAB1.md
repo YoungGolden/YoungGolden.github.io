@@ -324,7 +324,7 @@ if __name__ == "__main__":
     print(line)
 ```
 
-# basepy.in
+# basepy.in (Пример файла)
 
 ```txt
 3
