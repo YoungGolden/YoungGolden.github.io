@@ -8,6 +8,7 @@
 ```txt
 ---Добавил нахождение F=Ax-b // с++
 ---Добавил нахождение Max F  // с++
+![5](https://github.com/YoungGolden/YoungGolden.github.io/blob/master/img/5.png)
 ```
 
 # Цели и задачи
